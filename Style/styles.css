@@ -9,14 +9,14 @@ body,button{
 }
 
 .MainContainer{
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
-    margin:50px 38.77px 0 43.5px;
+    margin-top:50px
 }
 
 .navbar-nav{
@@ -82,3 +82,103 @@ body,button{
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+  /* Hero Section */
+  .heroSection h1{
+    font-size: 78px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 290px
+  }
+
+  .heroSection p{
+    font-size: 74px;
+    font-weight: 500;
+    line-height: 68px;
+    color: rgb(0, 0, 0);
+    margin-top: 18.3px;
+  }
+
+.divider{
+    width: 100%;
+    border: 1.85366px solid rgba(0, 0, 0, 0.75);
+    margin: 100px 0;
+}
+
+/*Projects section */
+
+#projects{
+    margin-bottom: 311px;
+}
+
+.outer {
+    height: 638.39px;
+    width: 1128.5px;
+    /* important part */
+    display: grid;
+    place-items: right;
+    grid-template-areas: "inner-div";
+  }
+  
+.inner {
+    height: 638.39px;
+    width: 1128.5px;
+    /* important part */
+    grid-area: inner-div;
+  }
+
+.inner-top{
+    background-color: white;
+    order: 3;
+    border: 2.51276px solid #000000;
+    box-shadow: 0px 5.02553px 5.02553px rgba(0, 0, 0, 0.25);
+}
+
+.inner-mid{
+    background-color: #95A7E7;
+    margin-left: 26.8px;
+    margin-top: 23.6px;
+    border: 1.25638px solid rgba(0, 0, 0, 0.5);
+    order: 2;
+}
+
+.inner-last{
+    background-color: rgba(149, 167, 231, 0.5);
+    margin-left: 48.14px;
+    margin-top: 45px;
+    border: 1.25638px solid rgba(0, 0, 0, 0.25);
+    order: 1;
+}
+
+/* footer */
+
+footer{
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div h2{
+    margin: 76px 0 248.83px 93px;
+    font-size: 58px;
+    line-height: 68px;
+    font-weight: 400;
+}
+
+.footer-links{
+    margin: 88px 50px 0px 0;
+}
+
+.link-box{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.28192px solid #000000;
+    width: 507px;
+    padding: 20px 0;
+}
+
+.link-box p {
+    font-size: 27px;
+    line-height: 68px;
+    font-weight: 400;
+}
