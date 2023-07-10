@@ -21,33 +21,35 @@
                 </a>
             </div>
             <div class="navbar-nav">
-                <a class="blog" href="#">Blog</a>
+                <!-- <a class="blog" href="#">Blog</a> -->
                 <div class="dropdown">
                     <button class="dropbtn">Projects <s><img src="/assets/Down Arrow.svg" alt=""></s></button>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
+                        <a href="#first-project">Link 1</a>
+                        <a href="#seconed-project">Link 2</a>
                     </div>
                 </div>
-                <a href="#">About Me</a>
+                <a href="/about.html" target="_blank">About Me</a>
             </div>
         </nav>
         <section class="heroSection">
-            <h1>Hello, i’m Hadi Maleh’s Website.</h1>
-            <p>Hadi is interaction designer with Front-end skills and Business background ...</p>
+            <h1>Hello, This is Abdullah Naifeh’s Website.</h1>
+            <p>Abdullah is a passionate and an interaction Front-end developer ...</p>
         </section>
-        <div class="divider"></div>
+        <hr class="divider">
+        </hr>
         <section id="projects">
 
-            <div class="outer">
+            <div id="first-project" class="outer">
                 <div class="inner inner-top"></div>
                 <div class="inner inner-mid"></div>
                 <div class="inner inner-last"></div>
             </div>
 
-            <div class="divider" style="margin-top: 149px; margin-bottom: 100px;"></div>
-            
-            <div class="outer">
+            <hr class="divider" style="margin-top: 149px; margin-bottom: 100px;">
+            </hr>
+
+            <div id="seconed-project" class="outer">
                 <div class="inner inner-top"></div>
                 <div class="inner inner-mid" style="background-color: #FAE6C1;"></div>
                 <div class="inner inner-last" style="background-color: #F0E6D3;"></div>
@@ -55,24 +57,30 @@
         </section>
     </div>
     <footer>
-        <div>
-            <h2>Let's Connect</h2>
-        </div>
-        <div class="footer-links">
-            <div class="link-box">
-                <p>Email</p>
-                <img src="/assets/noun-arrow.svg" alt="">
+        <div class="footer-container">
+            <div class="h2-div">
+                <h2>Let's Connect</h2>
             </div>
-            <div class="link-box">
-                <p>LinkedIn</p>
-                <img src="/assets/noun-arrow.svg" alt="">
-            </div>
-            <div class="link-box">
-                <p>Github</p>
-                <img src="/assets/noun-arrow.svg" alt="">
+            <div class="footer-links">
+                <hr class="linkBox-divider">
+                <div class="link-box mail">
+                    <p><a href="mailto:abdna59@gmail.com">Email</a></p>
+                    <img src="/assets/noun-arrow.svg" alt="">
+                </div>
+                <hr class="linkBox-divider">
+                <div class="link-box linkedIn">
+                    <p><a href="https://tr.linkedin.com/in/abdullah-naifeh-9a82a1149" target="_blank">LinkedIn</a></p>
+                    <img src="/assets/noun-arrow.svg" alt="">
+                </div>
+                <hr class="linkBox-divider">
+                <div class="link-box github">
+                    <p><a href="https://github.com/Abdullah-Naifeh" target="_blank">Github</a></p>
+                    <img src="/assets/noun-arrow.svg" alt="">
+                </div>
             </div>
         </div>
     </footer>
 </body>
 
+<script src="./JS/index.js"></script>
 </html>
