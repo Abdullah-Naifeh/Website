@@ -129,6 +129,63 @@ body{
     line-height: 1.62rem;
 }
 
+/* footer */
+
+footer {
+    background-color: #F6F6F6;
+
+}
+
+.footer-container {
+    margin: 0 auto;
+    max-width: 1758px;
+    display: flex;
+}
+
+.h2-div {
+    margin: 0 auto 0 50px;
+}
+
+footer div h2 {
+    margin: 76px 0 0 0;
+    font-size: clamp(2.25rem, calc(1.43rem + 3.36vw), 5.63rem);
+    line-height: 68px;
+    font-weight: 400;
+}
+
+.footer-links {
+    margin: 88px 50px 0px 0;
+}
+
+.link-box {
+    display: flex;
+    min-width: 507px;
+    padding: 20px 0;
+}
+
+.link-box img {
+    margin: 0 0 0 auto;
+}
+
+.linkBox-divider {
+    border-top: 1.28192px solid #000000;
+}
+
+
+.link-box:hover {
+    cursor: pointer;
+}
+
+.link-box p a {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: clamp(1.50rem, calc(1.29rem + 1.07vw), 2.63rem);
+    line-height: 68px;
+    font-weight: 400;
+
+}
+
 /* Media queries */
 
 /* Extra small devices (phones, between 320px and 425px) */
@@ -157,6 +214,68 @@ body{
         .experience-details{
             padding-right: 0;
         }
+
+        /* footer */
+
+    footer {
+        background-color: #F6F6F6;
+
+    }
+
+    .footer-container {
+        margin: 0 auto;
+        max-width: 1758px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2-div {
+        margin: 0 auto;
+    }
+
+    footer div h2 {
+        margin: 76px 0 0 0;
+        font-size: clamp(2.25rem, calc(1.43rem + 3.36vw), 5.63rem);
+        line-height: 68px;
+        font-weight: 400;
+    }
+
+    .footer-links {
+        margin: 88px 50px 0px 50px;
+    }
+
+    .footer-links p {
+        max-width: 65px;
+    }
+
+    .link-box {
+        display: flex;
+        min-width: 0;
+        padding: 20px 0;
+    }
+
+    .link-box img {
+        margin: 0 0 0 auto;
+    }
+
+    .linkBox-divider {
+        border-top: 1.28192px solid #000000;
+    }
+
+
+    .link-box:hover {
+        cursor: pointer;
+    }
+
+    .link-box p a {
+        text-decoration: none;
+        color: #000;
+        font-family: Inter;
+        font-size: clamp(1.50rem, calc(1.29rem + 1.07vw), 2.63rem);
+        line-height: 68px;
+        font-weight: 400;
+
+    }
 
 }
 
