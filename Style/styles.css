@@ -18,6 +18,7 @@ button {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -36,6 +37,29 @@ button {
     line-height: 33px;
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+}
+
+.bar-1{
+    margin: 5px 0;
+    width: 38px;
+    height: 3px;
+}
+
+.bar-2{
+    margin: 5px 0 0 auto;
+    width: 30px;
+    height: 3px;
+}
 .blog {
     font-size: 18.84px;
     margin-right: 177.23px;
@@ -343,6 +367,68 @@ footer div h2 {
 @media only screen and (max-width: 768px){
     .MainContainer{
         max-width: 725px;
+    }
+
+    .navbar{
+        align-items: flex-start;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active{
+        position: fixed;
+        right: 21.5px;
+        top: 9%;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        background-color: #F6F6F6;
+        transform: translateY(1px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        background-color: #F6F6F6;
+        margin: 5px 0 0 0;
+        width: 38px;
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .navbar-nav{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #393838;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+        width: 90%;
+        border-top: 2px solid white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navbar-nav.active{
+        color: #F6F6F6;
+        right: 0%;
+        padding-top: 115px;
+        height: 80%;
+    }
+    .navbar-nav.active a{
+        color: #F6F6F6;
+        font-size: 24px;
+        padding-top: 30px
+    }
+    .navbar-nav.active .dropdown{
+        display: none;
     }
 
     .inner-top, .inner-mid, .inner-last{
