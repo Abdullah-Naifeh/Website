@@ -68,7 +68,7 @@ button {
 /* Dropdown Button */
 .dropbtn {
     font-size: clamp(0.63rem, calc(0.32rem + 1.55vw), 2.25rem);
-    ;
+    padding-bottom: 10px;
     font-weight: 300;
     line-height: 33px;
     background-color: transparent;
@@ -76,6 +76,14 @@ button {
     border: none;
 }
 
+.dropbtn img{
+    margin-left: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+.dropbtn:hover img,
+.dropdown:hover .icon{
+    transform: rotate(180deg);
+}
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
@@ -89,7 +97,6 @@ button {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    /* margin-top: 16px; */
 }
 
 /* Links inside the dropdown */
@@ -98,9 +105,8 @@ button {
     padding: 12px 16px;
     text-decoration: none;
     font-size: clamp(0.63rem, calc(0.46rem + 0.83vw), 1.50rem);
-    ;
     display: block;
-    border: 1.80054px solid #000000;
+    border-top: 1.80054px solid #000000;
 }
 
 /* Show the dropdown menu on hover */
@@ -142,6 +148,8 @@ button {
     grid-template-areas: "inner-div";
 }
 
+
+
 .inner {
     height: 714px;
     grid-area: inner-div;
@@ -153,6 +161,11 @@ button {
     order: 3;
     border: 2.51276px solid #000000;
     box-shadow: 0px 5.02553px 5.02553px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease-in-out;
+}
+
+.inner-top:hover {
+    transform: translate(17px, 19px);
 }
 
 .inner-mid {
@@ -163,6 +176,7 @@ button {
     border: 1.25638px solid rgba(0, 0, 0, 0.5);
     order: 2;
 }
+
 
 .inner-last {
     max-width: 1694px;
