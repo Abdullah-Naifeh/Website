@@ -4,7 +4,8 @@ const github = document.getElementsByClassName('github')[0]
 const hamburger = document.querySelector('.hamburger')
 const navMenu = document.querySelector('.navbar-nav')
 const navLinks = document.querySelectorAll('.nav-link')
-// const innerTop = document.querySelector('.inner-top')
+const dropButton = document.querySelector('.dropbtn')
+const FirstProject = document.getElementById('first-project')
 // const innerMid = document.querySelector('.inner-mid')
 // const innerLast = document.querySelector('.inner-last')
 
@@ -29,9 +30,14 @@ navLinks.forEach( n => n.addEventListener('click', () => {
     navMenu.classList.remove('active');
 } ))
 
-// innerTop.addEventListener('mouseover' ,() => {
-//     innerLast.classList.toggle('inner-mid-active')
-// })
+FirstProject.addEventListener('click' , () => {
+    window.open('https://refubook-venus.netlify.app/')
+})
+console.log(FirstProject)
+
+// navLinks.forEach( n => n.addEventListener('mouseover', () => {
+//     dropButton.style.transform = 'scale(1.2 , 1.2)';
+// } ))
 // innerTop.addEventListener('mouseout' ,() => {
 //     innerLast.classList.remove('inner-mid-active')
 // })

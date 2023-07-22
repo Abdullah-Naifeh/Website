@@ -25,6 +25,8 @@ button {
 .navbar-nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    min-width: 28%;
 
 }
 
@@ -33,7 +35,6 @@ button {
     color: #000000;
     font-weight: 300;
     font-size: clamp(0.63rem, calc(0.39rem + 1.19vw), 1.88rem);
-    ;
     line-height: 33px;
 }
 
@@ -72,17 +73,21 @@ button {
     font-weight: 300;
     line-height: 33px;
     background-color: transparent;
-    margin-right: 137.6px;
     border: none;
+    transition: scale 0.5s ease-in-out;
+}
+
+.dropbtn:hover{
+    scale: 1.2;
 }
 
 .dropbtn img{
     margin-left: 8px;
-    transition: transform 0.5s ease-in-out;
+    transition: rotate 0.5s ease-in-out;
 }
 .dropbtn:hover img,
 .dropdown:hover .icon{
-    transform: rotate(180deg);
+     rotate : 180deg;
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -94,16 +99,24 @@ button {
 .dropdown-content {
     display: none;
     position: absolute;
+    left: -28px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
+.dropdown:hover .dropbtn{
+    scale: 1.2;
+    font-weight: 400;
+}
+
 /* Links inside the dropdown */
 .dropdown-content a {
+    width: 245px;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
+    text-align: start;
     font-size: clamp(0.63rem, calc(0.46rem + 0.83vw), 1.50rem);
     display: block;
     border-top: 1.80054px solid #000000;
@@ -113,6 +126,16 @@ button {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.about-me{
+    transition: scale 0.3s ease-in-out;
+}
+
+.about-me:hover{
+    scale: 1.1;
+    font-weight: 400;
+}
+
 
 /* Hero Section */
 .heroSection h1 {
@@ -217,6 +240,8 @@ button {
     font-size: clamp(0.63rem, calc(0.39rem + 0.99vw), 1.63rem);
     margin-bottom: 182px;
     line-height: 2.62rem;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 .project-titles span{
@@ -252,7 +277,8 @@ button {
 }
 
 .project_image img{
-    width: 225px;
+    box-shadow: 1px 1px 4px 3px rgb(232,251,251);
+    border-radius: 12px;
     height: 347px;
 }
 /* footer */
@@ -291,6 +317,11 @@ footer div h2 {
 
 .link-box img{
     margin: 0 0 0 auto;
+    opacity: 0;
+}
+
+.link-box:hover img{
+    opacity: 1;
 }
 
 .linkBox-divider {
@@ -309,8 +340,17 @@ footer div h2 {
     font-size: clamp(1.50rem, calc(1.29rem + 1.07vw), 2.63rem);
     line-height: 68px;
     font-weight: 400;
-
 }
+
+.link-box p{
+    transition: translate 0.4s ease-in-out;
+}
+
+.link-box:hover p {
+    translate: 20px 0;
+}
+
+
 
 
 /* Media queries */
