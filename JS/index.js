@@ -33,7 +33,11 @@ navLinks.forEach( n => n.addEventListener('click', () => {
 FirstProject.addEventListener('click' , () => {
     window.open('https://refubook-venus.netlify.app/')
 })
-console.log(FirstProject)
+
+
+function ViewCodeOnClick (){
+    window.open('https://github.com/Recoded-Spark-Turkey-2022/Venus')
+}
 
 // navLinks.forEach( n => n.addEventListener('mouseover', () => {
 //     dropButton.style.transform = 'scale(1.2 , 1.2)';
