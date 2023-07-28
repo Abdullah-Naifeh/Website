@@ -145,13 +145,13 @@ button {
     font-size: clamp(1.75rem, calc(0.96rem + 3.23vw), 5.00rem);
     font-weight: 500;
     color: rgba(0, 0, 0, 0.5);
-    margin-top: 290px
+    margin-top: 200px
 }
 
 .heroSection p {
     font-size: clamp(1.61rem, calc(0.87rem + 3.00vw), 4.63rem);
     font-weight: 500;
-    line-height: 68px;
+    line-height: 85px;
     color: rgb(0, 0, 0);
     margin-top: 18.3px;
 }

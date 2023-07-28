@@ -10,7 +10,7 @@ body{
 
 .about-container{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 25px;
 }
 
 .intro{
@@ -244,9 +244,6 @@ footer div h2 {
         margin: 88px 50px 0px 50px;
     }
 
-    .footer-links p {
-        max-width: 65px;
-    }
 
     .link-box {
         display: flex;
@@ -337,7 +334,7 @@ footer div h2 {
 @media only screen and (min-width: 1025px) {
     .about-container{
         max-width: 1440px;
-        margin: 0 auto;
+        margin: 0 25px;
     }
 
     .intro,.experience-section{

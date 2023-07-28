@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/Style/about.css">
+    <link rel="stylesheet" href="/Style/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,6 +14,28 @@
 
 <body>
     <div class="about-container">
+        <nav class="navbar">
+            <div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/AbdNa-logo.svg" width="75" height="93" alt="site logo">
+                </a>
+            </div>
+            <div class="navbar-nav">
+                <!-- <a class="blog" href="#">Blog</a> -->
+                <div class="dropdown nav-item">
+                    <button class="dropbtn">Projects <s><img class="icon" src="/assets/DownArrow.svg" alt="" width="23" height="13"></s></button>
+                    <div class="dropdown-content">
+                        <a href="#first-project" class="nav-link">RefuBook</a>
+                        <a href="#seconed-project" class="nav-link">Link 2</a>
+                    </div>
+                </div>
+                <a href="/about.html" target="_blank" class="nav-item nav-link about-me">About Me</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+            </div>
+        </nav>
         <section class="intro">
             <div class="intro__paragraph">
                 <p class="first">A UX DESIGNER based out of ISTANBUL Currently trying make Blockchain tech.  more accessibe useful and easy to use with @TechFleet-DAO</p>
@@ -115,6 +138,6 @@
             </div>
         </div>
     </footer>
+    <script src="./JS/index.js"></script>
 </body>
-
 </html>

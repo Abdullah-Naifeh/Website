@@ -39,6 +39,8 @@ function ViewCodeOnClick (){
     window.open('https://github.com/Recoded-Spark-Turkey-2022/Venus')
 }
 
+
+
 // navLinks.forEach( n => n.addEventListener('mouseover', () => {
 //     dropButton.style.transform = 'scale(1.2 , 1.2)';
 // } ))
