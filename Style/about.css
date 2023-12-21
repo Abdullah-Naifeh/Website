@@ -346,4 +346,8 @@ footer div h2 {
     .intro-paragraph {
         text-align: start;
     }
+
+    .navbar{
+        margin: 0 25px;
+    }
 }
