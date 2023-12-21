@@ -353,9 +353,51 @@ footer div h2 {
 }
 
 
-
-
 /* Media queries */
+/* 2650px and down */
+@media only screen and (max-width: 2650px){
+    .MainContainer{
+        max-width: 1350px;
+        padding: 0 25px 50px 25px;
+    }
+
+    .inner-top, .inner-mid, .inner-last{
+        max-width: 1252px;
+    }
+
+    .project-container{
+        display: grid; 
+        grid-template-columns: repeat(10, 1fr); 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        padding: 3.21rem 5.44rem 3.56rem 5.14rem;
+    }
+    
+    .project-name{
+        grid-area: 1 / 1 / 5 / 4;
+    }
+
+
+    .project-titles{
+        display: flex;
+        flex-direction: column;
+        grid-area: 5 / 1 / 11 / 4;
+    }
+    
+    
+    .project-descriptionAndImage{
+        grid-area: 1 / 3 / 11 / 11;
+    }
+    
+
+    /* footer */
+
+    .h2-div{
+        margin-left: 50px;
+    }
+}
+
+
 @media only screen and (max-width: 1440px){
     .MainContainer{
         max-width: 1350px;
