@@ -45,3 +45,5 @@ function ViewRefuBookCode() {
 function ViewMadLibsCode() {
   window.open("https://github.com/Recoded-Spark-Turkey-2022/mad-libs-los-galacticos");
 }
+
+
