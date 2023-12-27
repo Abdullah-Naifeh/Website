@@ -6,7 +6,7 @@ const navMenu = document.querySelector(".navbar-nav");
 const navLinks = document.querySelectorAll(".nav-link");
 const dropButton = document.querySelector(".dropbtn");
 const FirstProject = document.getElementById("first-project");
-const SeconedProject = document.getElementById("seconed-project");
+const SecondProject = document.getElementById("second-project");
 
 mail.addEventListener("click", function () {
   window.open("mailto:abdna59@gmail.com");
@@ -34,8 +34,10 @@ FirstProject.addEventListener("click", () => {
   window.open("https://refubook-venus.netlify.app/");
 });
 
-SeconedProject.addEventListener("click", () => {
-  window.open("https://recoded-spark-turkey-2022.github.io/mad-libs-los-galacticos/");
+SecondProject.addEventListener("click", () => {
+  window.open(
+    "https://recoded-spark-turkey-2022.github.io/mad-libs-los-galacticos/"
+  );
 });
 
 function ViewRefuBookCode() {
@@ -43,7 +45,7 @@ function ViewRefuBookCode() {
 }
 
 function ViewMadLibsCode() {
-  window.open("https://github.com/Recoded-Spark-Turkey-2022/mad-libs-los-galacticos");
+  window.open(
+    "https://github.com/Recoded-Spark-Turkey-2022/mad-libs-los-galacticos"
+  );
 }
-
-
