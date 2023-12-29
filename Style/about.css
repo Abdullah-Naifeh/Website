@@ -130,7 +130,7 @@ body {
     line-height: 1.62rem;
 }
 
-/* footer */
+/* footer
 
 footer {
     background-color: #F6F6F6;
@@ -155,12 +155,11 @@ footer div h2 {
 }
 
 .footer-links {
-    margin: 88px 50px 0px 0;
+    margin: 88px 0px 0px 0;
 }
 
 .link-box {
     display: flex;
-    min-width: 507px;
     padding: 20px 0;
 }
 
@@ -170,7 +169,7 @@ footer div h2 {
 
 .linkBox-divider {
     border-top: 1.28192px solid #000000;
-}
+} 
 
 
 .link-box:hover {
@@ -185,7 +184,7 @@ footer div h2 {
     line-height: 68px;
     font-weight: 400;
 
-}
+} */
 
 /* Media queries */
 
@@ -217,7 +216,7 @@ footer div h2 {
 
     /* footer */
 
-    footer {
+    /* footer {
         background-color: #F6F6F6;
 
     }
@@ -262,9 +261,9 @@ footer div h2 {
 
     .link-box:hover {
         cursor: pointer;
-    }
+    }*/
 
-    .link-box p a {
+    .link-box p{
         text-decoration: none;
         color: #000;
         font-family: Inter;
@@ -274,7 +273,7 @@ footer div h2 {
 
     }
 
-}
+} 
 
 /* Large devices (laptops/desktops, 1024px and down) */
 @media only screen and (max-width: 1024px) {
@@ -349,4 +348,8 @@ footer div h2 {
     .navbar{
         margin: 0 25px;
     }
+
+    /* .link-box{
+        min-width: 507px;
+    } */
 }
