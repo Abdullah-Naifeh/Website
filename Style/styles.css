@@ -28,7 +28,9 @@ button {
   justify-content: space-between;
   align-items: center;
   padding-top: 50px;
-  margin: 0 25px;
+  padding-inline: 25px;
+  margin: 0 auto;
+  max-width: 1350px;
 }
 
 .navbar-nav {
